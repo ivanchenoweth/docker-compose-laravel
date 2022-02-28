@@ -1,0 +1,180 @@
+{
+	"id": "d607f8df-7a5c-ea32-7952-25f220ce1fbd",
+	"name": "JWT-local",
+	"description": "",
+	"order": [
+		"93a9bfcb-dc26-3486-2ab4-5f8c1dc721df",
+		"1ef00aeb-2313-14f5-3134-1f204a393bd5",
+		"39e3035f-2b03-e15a-0e8b-e225ee6ee16a",
+		"bdaa25e1-74c5-a6f9-642f-174223dc4446"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1644196912923,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "1ef00aeb-2313-14f5-3134-1f204a393bd5",
+			"headers": "",
+			"headerData": [],
+			"url": "{{host}}/api/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "email",
+					"value": "ivanchenoweth@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "!234qwerASDF",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1645309660784,
+			"name": "JWT /api/login",
+			"description": "",
+			"collectionId": "d607f8df-7a5c-ea32-7952-25f220ce1fbd",
+			"responses": []
+		},
+		{
+			"id": "39e3035f-2b03-e15a-0e8b-e225ee6ee16a",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xOTIuMTY4LjEuODFcL2FwaVwvcmVmcmVzaCIsImlhdCI6MTY0NTMwOTc2OCwiZXhwIjoxNjQ1MzEzNDc5LCJuYmYiOjE2NDUzMDk4NzksImp0aSI6Ik53aVVubzhlVmd2S3ZaSzciLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.cWXJ8cOhYmskzx-4q85BfJxKq4rFObvmTm5k0w07z8A\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xOTIuMTY4LjEuODFcL2FwaVwvcmVmcmVzaCIsImlhdCI6MTY0NTMwOTc2OCwiZXhwIjoxNjQ1MzEzNDc5LCJuYmYiOjE2NDUzMDk4NzksImp0aSI6Ik53aVVubzhlVmd2S3ZaSzciLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.cWXJ8cOhYmskzx-4q85BfJxKq4rFObvmTm5k0w07z8A",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/profile",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1645309824866,
+			"name": "JWT/api/profile",
+			"description": "",
+			"collectionId": "d607f8df-7a5c-ea32-7952-25f220ce1fbd",
+			"responses": []
+		},
+		{
+			"id": "93a9bfcb-dc26-3486-2ab4-5f8c1dc721df",
+			"headers": "",
+			"headerData": [],
+			"url": "{{host}}/api/register",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "name",
+					"value": "Ivan",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "ivanchenoweth@gmail.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "!234qwerASDF",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password_confirmation",
+					"value": "!234qwerASDF",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1645305909174,
+			"name": "JTW api/register",
+			"description": "",
+			"collectionId": "d607f8df-7a5c-ea32-7952-25f220ce1fbd",
+			"responses": []
+		},
+		{
+			"id": "bdaa25e1-74c5-a6f9-642f-174223dc4446",
+			"headers": "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xOTIuMTY4LjEuODFcL2FwaVwvbG9naW4iLCJpYXQiOjE2NDUzMDk3NjgsImV4cCI6MTY0NTMxMzM2OCwibmJmIjoxNjQ1MzA5NzY4LCJqdGkiOiJDQUJJZ1ZWQUhXTndsN29lIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2us7Fvm8YK4KMJgzGqMltqhO4HZIa1JQjVJ-bo2tVd4\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xOTIuMTY4LjEuODFcL2FwaVwvbG9naW4iLCJpYXQiOjE2NDUzMDk3NjgsImV4cCI6MTY0NTMxMzM2OCwibmJmIjoxNjQ1MzA5NzY4LCJqdGkiOiJDQUJJZ1ZWQUhXTndsN29lIiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2us7Fvm8YK4KMJgzGqMltqhO4HZIa1JQjVJ-bo2tVd4",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/refresh",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "Autorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xOTIuMTY4LjEwMC4xNzVcL2FwaVwvbG9naW4iLCJpYXQiOjE2NDQyMDIxMzcsImV4cCI6MTY0NDIwNTczNywibmJmIjoxNjQ0MjAyMTM3LCJqdGkiOiJ3WXJmc09ZaEljbDRBZlU3Iiwic3ViIjoxLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.OCRXudvEehLt39bJU6xmN8qBkwGgdmo_2SDmwr_JqdQ",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1645309765473,
+			"name": "JWT /api/refresh",
+			"description": "",
+			"collectionId": "d607f8df-7a5c-ea32-7952-25f220ce1fbd",
+			"responses": []
+		}
+	]
+}

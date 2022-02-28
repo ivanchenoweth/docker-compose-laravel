@@ -23,7 +23,8 @@ class RedirectingController extends Controller
     }
 
     public function __invoke(Request $request)
-    {        
+    {   
+         
         $apiURL = env('APP_JWT').'/api/login';
         $postInput = [
             'email' => $request->input("uname"),
@@ -33,7 +34,8 @@ class RedirectingController extends Controller
         $headers = [
             'X-header' => 'value'
         ];  
-        $response = Http::withHeaders($headers)->post($apiURL, $postInput);                
+        $response = Http::withHeaders($headers)->post($apiURL, $postInput);    
+        dd($response) ;            
         $statusCode = $response->status();
         $responseBody = json_decode($response->getBody(), true);        
         $token=@$responseBody["access_token"];        

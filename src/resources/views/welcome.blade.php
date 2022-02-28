@@ -20,6 +20,8 @@
             }
         </style>
     </head>
+
+
     <body class="antialiased">
         <form action="redirecting" method="post"> @csrf
             <label for="uname"><b>Username</b></label>
@@ -29,6 +31,11 @@
             <button type="submit">Login</button>
         </form>
 
+        <h1> PoC of JWT Auth in Laravel </h1>
+
+        <h2> JWT API is working in: {{ env('APP_JWT')}}</h2>
+
+        
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
