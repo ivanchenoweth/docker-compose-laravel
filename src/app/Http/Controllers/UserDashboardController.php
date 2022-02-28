@@ -19,14 +19,13 @@ class UserDashboardController extends Controller
     public function show(Request $request)
     {
        $this->getCookie($request);
-       dd("UserDashboardController");
+       echo "<h1> This is UserDashboardController getting the cookie created from JWT API </h1>";
+       exit();
     }
 
     public function getCookie(Request $request) {
         $value = $request->cookie('jwt');                
         $apiURL = env('APP_JWT').'/api/profile';
-        var_dump($value);
-        var_dump($apiURL);
         $header1 = "Bearer ".$value;
         $postInput = [
         ];
@@ -36,7 +35,12 @@ class UserDashboardController extends Controller
         ];
         $response = Http::withHeaders($headers)->post($apiURL, $postInput); 
         $statusCode = $response->status();
-        $responseBody = json_decode($response->getBody(), true);   
-        dd($responseBody);   
+        $responseBody = json_decode($response->getBody(), true);
+        
+        var_dump($value);
+        var_dump($apiURL);
+        return $value;
+
+          
      }
 }

@@ -34,8 +34,7 @@ class RedirectingController extends Controller
         $headers = [
             'X-header' => 'value'
         ];  
-        $response = Http::withHeaders($headers)->post($apiURL, $postInput);    
-        dd($response) ;            
+        $response = Http::withHeaders($headers)->post($apiURL, $postInput);                        
         $statusCode = $response->status();
         $responseBody = json_decode($response->getBody(), true);        
         $token=@$responseBody["access_token"];        
@@ -51,7 +50,7 @@ class RedirectingController extends Controller
 
     public function getCookie(Request $request) {
         $value = $request->cookie('name');
-        echo $value;
+        echo $value;        
      }
 
 }

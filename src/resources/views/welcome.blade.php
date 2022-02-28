@@ -23,6 +23,9 @@
 
 
     <body class="antialiased">
+
+
+    
         <form action="redirecting" method="post"> @csrf
             <label for="uname"><b>Username</b></label>
             <input type="text" placeholder="Enter Username" name="uname" required>
@@ -31,9 +34,16 @@
             <button type="submit">Login</button>
         </form>
 
+        <hr>
         <h1> PoC of JWT Auth in Laravel </h1>
-
         <h2> JWT API is working in: {{ env('APP_JWT')}}</h2>
+        <hr>
+        <a href="https://github.com/ivanchenoweth/docker-compose-laravel/tree/jwt-poc" >Click here to get Gihub source code </a>
+        <hr>
+        <a href="https://github.com/ivanchenoweth/docker-compose-laravel/blob/jwt-poc/src/tests/JWT-local.postman_collection.json" >Get the Postman collection </a>
+        <hr>
+        Add the host variable environment with the JWT API IP showed above
+        <hr>
 
         
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
