@@ -15,4 +15,7 @@ RUN sed -i "s/user  nginx/user laravel/g" /etc/nginx/nginx.conf
 
 ADD ./nginx/default.conf /etc/nginx/conf.d/
 
+ADD ./certs/server.crt /etc/nginx/server.crt
+ADD ./certs/server.key /etc/nginx/server.key
+
 RUN mkdir -p /var/www/html

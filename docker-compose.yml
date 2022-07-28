@@ -14,6 +14,7 @@ services:
     container_name: nginx
     ports:
       - 80:80
+      - 443:443
     volumes:
       - ./src:/var/www/html:delegated
     depends_on:
@@ -38,6 +39,8 @@ services:
       MYSQL_ROOT_PASSWORD: secret
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
+    volumes:
+      - ./mysql:/var/lib/mysql
     networks:
       - laravel
 
